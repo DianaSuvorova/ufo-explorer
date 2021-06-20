@@ -1,5 +1,5 @@
 export default ({ login, name }) => `
- {
+query {
   repositoryOwner (login: ${login}) {
     repository(name: ${name}) {
       forks {
