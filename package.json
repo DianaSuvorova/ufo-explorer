@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint .  --ext .js --fix",
     "format": "prettier-eslint --eslint-config-path ./.eslintrc.js --write '**/*.js'",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "npm run lint"
   },
   "dependencies": {
     "hosted-git-info": "^4.0.2",
