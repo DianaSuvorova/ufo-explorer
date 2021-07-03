@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5vh 8vw 0;
+    position: sticky;
+    inset: 0;
+    background-color: #000;
+}
+
+.header__links{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    min-width: 50vw;
+}
+.header__link{
+
+    font-size: 20px;
+}
+@media screen and (max-width:450px) {
+    .header{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}

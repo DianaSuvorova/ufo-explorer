@@ -1,0 +1,25 @@
+.footer{
+    color: #9b9b9c;
+    padding: 5vh 8vw;
+    position: static;
+    left: 0;
+    bottom: 0;
+}
+.footer__content{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+.footer__item{
+    margin: 0 40px 0 0;
+}
+
+@media screen and (max-width: 600px) {
+    .footer__content{
+        flex-direction: column-reverse;
+    }
+    
+}
