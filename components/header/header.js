@@ -7,7 +7,7 @@ export default function Header() {
     <header className={styles.header}>
       <Image
         className={styles.header__image}
-        src="/logo_light.svg"
+        src="/logo_dark.svg"
         alt="UFO Logo"
         width={50}
         height={25}

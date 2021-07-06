@@ -3,25 +3,38 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 5vh 8vw 0;
+    
     position: sticky;
     inset: 0;
-    background-color: #000;
+    background-color: #fff;
 }
 
 .header__links{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     padding: 0;
     min-width: 50vw;
 }
 .header__link{
-
+    padding-right: 89px;
     font-size: 20px;
 }
-@media screen and (max-width:450px) {
+.header__link:last-of-type{
+    padding-right: 0;
+}
+@media screen and (max-width:550px) {
     .header{
+        padding: 5vh 5vh 0;
         flex-direction: column;
-        justify-content: flex-start;
+        align-content: center;
+        justify-content: center;
+    }
+    .header__links{
+        padding-top: 5px;
+        justify-content: center;
+    }
+    .header__link{
+        padding-right: 45px;
     }
 }
