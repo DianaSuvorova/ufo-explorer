@@ -1,9 +1,9 @@
 .footer{
     color: #9b9b9c;
     padding: 5vh 0;
-    position: sticky;
+    position: fixed;
     background-color: #fff;
-    right: 0;
+    right: 5vw;
     bottom: 0;
 }
 .footer__content{
@@ -22,6 +22,11 @@
     margin: 0;
 }
 
+@media screen and (max-width: 1000px) {
+    .footer{
+        position: sticky;
+    }
+}
 @media screen and (max-width: 630px) {
     .footer{
         padding: 5vh 0;
