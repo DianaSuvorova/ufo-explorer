@@ -21,10 +21,10 @@
 .footer__item:last-of-type{
     margin: 0;
 }
-
+/*Do need to figure out point where content has issues of being blocked to change to sticky or static*/
 @media screen and (max-width: 1000px) {
     .footer{
-        position: sticky;
+        position: static;
     }
 }
 @media screen and (max-width: 630px) {
