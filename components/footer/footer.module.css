@@ -1,9 +1,9 @@
 .footer{
     color: #9b9b9c;
-    padding: 5vh 8vw;
-    position: sticky;
+    padding: 5vh 0;
+    position: fixed;
     background-color: #fff;
-    right: 0;
+    right: 5vw;
     bottom: 0;
 }
 .footer__content{
@@ -21,10 +21,15 @@
 .footer__item:last-of-type{
     margin: 0;
 }
-
+/*Do need to figure out point where content has issues of being blocked to change to sticky or static*/
+@media screen and (max-width: 1000px) {
+    .footer{
+        position: static;
+    }
+}
 @media screen and (max-width: 630px) {
     .footer{
-        padding: 5vh 5vh;
+        padding: 5vh 0;
     }
     .footer__content{
         flex-direction: column-reverse;
