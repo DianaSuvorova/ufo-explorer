@@ -1,6 +1,6 @@
 .footer{
     color: #9b9b9c;
-    padding: 5vh 8vw;
+    padding: 5vh 0;
     position: sticky;
     background-color: #fff;
     right: 0;
@@ -24,7 +24,7 @@
 
 @media screen and (max-width: 630px) {
     .footer{
-        padding: 5vh 5vh;
+        padding: 5vh 0;
     }
     .footer__content{
         flex-direction: column-reverse;
