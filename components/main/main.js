@@ -11,7 +11,7 @@ export default function Main() {
         </div>
         <SearchForm />
         <div className={styles.main__description}>
-          Just edit, push, and your changes are live.
+          Find open source projects you use that need your help.
         </div>
       </div>
       <div className={styles.main__image}>
