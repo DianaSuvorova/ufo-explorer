@@ -5,13 +5,17 @@ import styles from "./header.module.css";
 export default function Header() {
   return (
     <header className={styles.header}>
-      <Image
-        className={styles.header__image}
-        src="/logo_dark.svg"
-        alt="UFO Logo"
-        width={50}
-        height={25}
-      />
+      <Link href="/" passHref>
+        <a href="replace">
+          <Image
+            className={styles.header__image}
+            src="/logo_dark.svg"
+            alt="UFO Logo"
+            width={50}
+            height={25}
+          />
+        </a>
+      </Link>
       <ul className={styles.header__links}>
         <li className={styles.header__link}>
           <Link href="/">Main</Link>
