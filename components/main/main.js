@@ -7,7 +7,7 @@ export default function Main() {
     <main className={styles.main}>
       <div>
         <div className={styles.main__title}>
-          Learn and build like a pro with UFO Enterprise
+          Friendly open source opportunities explorer
         </div>
         <SearchForm />
         <div className={styles.main__description}>
