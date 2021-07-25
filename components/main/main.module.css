@@ -5,9 +5,12 @@
   gap: 30px;
 }
 
+.main__content {
+  margin: 20px;
+  max-width: 700px;
+}
+
 .main__title {
-  max-width: 645px;
-  margin: 0 0 70px;
   font-family: 'Tungsten';
   font-size: 90px;
   font-weight: bold;
@@ -18,11 +21,8 @@
   color: #242525;
 }
 
-
-
 .main__description {
   height: 80px;
-  margin: 25px 0 0;
   font-family: 'Open Sans';
   font-size: 18px;
   font-weight: normal;
