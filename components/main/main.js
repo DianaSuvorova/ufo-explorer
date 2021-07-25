@@ -11,7 +11,7 @@ export default function Main() {
         </div>
         <SearchForm />
         <div className={styles.main__description}>
-          Find open source projects you use that need your help.
+          Feel the power of the community by giving back.
         </div>
       </div>
       <div className={styles.main__image}>
