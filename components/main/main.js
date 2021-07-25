@@ -5,7 +5,7 @@ import SearchForm from "../searchform/searchform";
 export default function Main() {
   return (
     <main className={styles.main}>
-      <div>
+      <div className={styles.main__content}>
         <div className={styles.main__title}>
           Friendly open source opportunities explorer
         </div>
