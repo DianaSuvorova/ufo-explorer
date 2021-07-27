@@ -33,6 +33,7 @@ export default function About() {
             Join us! We are open source and would welcome contributions in the
             form of code, ideas, inspirations, good memes!
           </p>
+          <div className={styles.about__contacts}>diana.suvorova@gmail.com</div>
         </div>
         <div className={styles.about__image}>
           <Image
