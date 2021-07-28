@@ -13,21 +13,24 @@ export default function About() {
         <div className={styles.about__content}>
           <p>Hi There!</p>
           <p>
-            We believe in the power of the community through the power of
-            technology through the power of its community.{" "}
+            We are a group of people that believe that technology and its
+            community fuel the development and growth of each other.
           </p>
           <p>
-            Our technology of choice is Javascript. And we are all at very
-            different stages of discovering it. Some of us learn it while being
-            full-time Javascript engineers, others doing it full-time without
-            being paid for it.
+            The technological community that we are a part of is JavaScript, and
+            we are all at very different stages of discovering it - some of us
+            are full-time JavaScript engineers, others do it full-time without
+            being paid for it. We like JavaScript because it is inherently
+            communal and that aligns with our beliefs - nearly every JavaScript
+            tool used is open source.
           </p>
           <p>
-            We are building a product that, given the dependencies of your
-            project in a form of `package.json` , returns the list of projects
-            that is being used as a first-degree dependency or a dependency of a
-            dependency and may use some attention from fellow engineers. Ie it
-            is in active development yet falls below `developer fame` threshold.
+            To empower JavaScript users to engage with their community, we are
+            building a product that analyzes your project’s `package.json` file
+            and returns the list of projects that are being used as a first- or
+            second-degree dependency and may use some attention from fellow
+            engineers (i.e. it is in active development yet falls below
+            `developer fame` threshold).
           </p>
           <p>
             Join us! We are open source and would welcome contributions in the
