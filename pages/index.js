@@ -7,6 +7,11 @@ export default function Home() {
     <>
       <Header />
       <a href="/api/auth/login">Login</a>
+      <div />
+      <a href="/api/auth/logout">Logout</a>
+      <div />
+      <a href="/profile">Profile </a>
+
       <Main />
       <Footer />
     </>
