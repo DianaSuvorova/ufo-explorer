@@ -9,14 +9,21 @@ export default function Profile() {
 
   return (
     user && (
-      <div>
-        <img src={user.picture} alt={user.name} />
-        <h2>{user.name}</h2>
-        <p>{user.email}</p>
-        <a href="/">Go back</a>
-        <div />
-        <a href="/api/auth/logout">Logout</a>
-      </div>
+      <>
+        <h1 style={{ textAlign: 'center' }}>This is a profile page</h1>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
+          <img src={user.picture} alt={user.name} />
+          <h2>{user.name}</h2>
+          <p>{user.email}</p>
+        </div>
+      </>
     )
   );
 }
