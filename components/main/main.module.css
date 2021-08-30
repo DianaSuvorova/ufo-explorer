@@ -11,7 +11,7 @@
 }
 
 .main__title {
-  font-family: 'Tungsten';
+  font-family: "Tungsten";
   font-size: 90px;
   font-weight: bold;
   font-stretch: normal;
@@ -23,7 +23,7 @@
 
 .main__description {
   height: 80px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
@@ -34,9 +34,40 @@
 }
 
 .main__image {
-  margin: 120px 0 0;
   width: 100%;
   height: 100%;
 }
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 0;
+    margin: 50px;
+    grid-gap: 0;
+    gap: 0;
+  }
+  .main__title {
+    font-size: 45px;
+    max-width: 16ch;
+  }
 
+  .main__image {
+    margin: 0;
+  }
 
+  .main__description {
+    width: 150%;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main {
+    margin: 10px;
+  }
+  .main__content {
+    margin: 40px 20px;
+  }
+  .main__image {
+    margin: 85px 0 0;
+  }
+}
