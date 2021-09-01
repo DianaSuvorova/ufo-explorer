@@ -9,11 +9,10 @@
   margin: 70px 0 35px 0;
 }
 
-
 .search__input {
   width: 100%;
   background-color: #f2f2f6;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
@@ -26,3 +25,9 @@
   outline: none;
 }
 
+@media screen and (max-width: 768px) {
+  .search {
+    width: 160%;
+    height: 45px;
+  }
+}
