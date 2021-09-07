@@ -5,11 +5,11 @@ export default withApiAuthRequired(async (req, res) => {
   // `getAccessToken` will fetch you a new one using the `refresh_token` grant
   try {
     const { accessToken } = await getAccessToken(req, res, {
-      scopes: ['public_repo'],
+      // scopes: ['public_repos'],
     });
     // eslint-disable-next-line no-undef
-    const { user } = getSession(req, res);
-    res.json({ protected: 'My Secret', id: user.sub });
+    // const { user } = getSession(req, res);
+    // res.json({ protected: 'My Secret', id: user.sub });
     // eslint-disable-next-line no-undef
     const response = await fetch('https://api.github.com/repos/facebook/react', {
       headers: {
