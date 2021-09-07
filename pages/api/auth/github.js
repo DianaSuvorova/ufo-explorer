@@ -1,4 +1,8 @@
-import { getAccessToken, getSession, withApiAuthRequired } from '@auth0/nextjs-auth0';
+import {
+  getAccessToken,
+  // getSession,
+  withApiAuthRequired,
+} from '@auth0/nextjs-auth0';
 
 export default withApiAuthRequired(async (req, res) => {
   // If your Access Token is expired and you have a Refresh Token
