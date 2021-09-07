@@ -1,4 +1,4 @@
-export default function Test() {
+export default function Logout() {
   const buttonStyle = {
     margin: '10px',
     fontFamily: '"Arial Black", Gadget, sans-serif',

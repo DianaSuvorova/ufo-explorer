@@ -4,7 +4,13 @@ import { handleAuth } from '@auth0/nextjs-auth0';
 // Access external API from an API Route docs 👇
 // https://github.com/auth0/nextjs-auth0/blob/main/EXAMPLES.md#access-an-external-api-from-an-api-route
 
-export default handleAuth();
+export default handleAuth({
+  authorizationParams: {
+    audience: 'https://api.github.com/users', // or AUTH0_AUDIENCE
+    // Add the `offline_access` scope to also get a Refresh Token
+    scope: 'openid profile email', // or AUTH0_SCOPE
+  },
+});
 // {
 //   async login(req, res) {
 //     try {
