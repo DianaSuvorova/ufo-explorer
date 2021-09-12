@@ -13,27 +13,23 @@ export default function About() {
         <div className={styles.about__content}>
           <p>Hi There!</p>
           <p>
-            We are a group of people that believe that technology and its
+            We are a group of people who believe that technology and its
             community fuel the development and growth of each other.
           </p>
           <p>
-            The technological community that we are a part of is JavaScript, and
-            we are all at very different stages of discovering it - some of us
-            are full-time JavaScript engineers, others do it full-time without
-            being paid for it. We like JavaScript because it is inherently
-            communal and that aligns with our beliefs - nearly every JavaScript
-            tool used is open source.
+            The community that we are part of is JavaScript, and we are all at
+            very different stages of discovering it. Some of us are full-time
+            JavaScript engineers, others are exploring it in their free time. We love JavaScript because it is inherently communal, and that aligns with our beliefs - nearly every JavaScript tool used is open source.
           </p>
           <p>
-            To empower JavaScript users to engage with their community, we are
-            building a product that analyzes your project’s `package.json` file
-            and returns the list of projects that are being used as a first- or
-            second-degree dependency and may use some attention from fellow
-            engineers (i.e. it is in active development yet falls below
-            `developer fame` threshold).
+            We want to empower JavaScript users to engage with their community,
+            so we are building a product to do just that! Our open source
+            explorer analyzes your projects `package.json` file, and returns a
+            list of projects that are being used as a first or second-degree
+            dependency that may need some attention from fellow engineers (you!). In other words, projects that are in active development yet fall below the `developer fame` threshold.
           </p>
           <p>
-            Join us! We are open source and would welcome contributions in the
+            Join us! We are open source and welcome contributions in the
             form of code, ideas, inspirations, good memes!
           </p>
           <div className={styles.about__contacts}>diana.suvorova@gmail.com</div>
