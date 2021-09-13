@@ -40,7 +40,7 @@ export default function About() {
         </div>
         <div className={styles.about__image}>
           <Image
-            src="/ufo-team.png"
+            src="/about-us.png"
             alt="UFO Team"
             width={2778}
             height={2210}

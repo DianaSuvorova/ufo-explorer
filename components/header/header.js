@@ -21,9 +21,7 @@ export default function Header() {
           <Link href="/">Main</Link>
         </li>
         <li className={styles.header__link}>
-          <Link href="https://github.com/DianaSuvorova/ufo-explorer">
-            GitHub
-          </Link>
+          <Link href="/documentation">Documentation</Link>
         </li>
         <li className={styles.header__link}>
           <Link href="/about">About Us</Link>
