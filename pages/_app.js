@@ -1,8 +1,9 @@
 import "../styles/globals.css";
-/* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable react/prop-types */
-import React from "react";
+// eslint-disable-next-line react/prop-types
+function MyApp({ Component, pageProps }) {
+  // eslint-disable-next-line react/jsx-props-no-spreading
 
-export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }
+
+export default MyApp;
