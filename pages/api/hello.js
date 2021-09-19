@@ -1,5 +1,5 @@
-import { fromUrl } from 'hosted-git-info';
-import fetch from 'node-fetch';
+import { fromUrl } from "hosted-git-info";
+import fetch from "node-fetch";
 
 export default (req, res) => {
   fetch('https://registry.npmjs.org/react')

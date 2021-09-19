@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import Header from '../../components/header/header';
-import Footer from '../../components/footer/footer';
-import styles from './about.module.css';
+import Image from "next/image";
+import Header from "../../components/header/header";
+import Footer from "../../components/footer/footer";
+import styles from "./about.module.css";
 
 /* eslint-disable max-len */
 
