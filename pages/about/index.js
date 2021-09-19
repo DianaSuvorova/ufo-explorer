@@ -35,7 +35,7 @@ export default function About() {
           <div className={styles.about__contacts}>diana.suvorova@gmail.com</div>
         </div>
         <div className={styles.about__image}>
-         <Image
+          <Image
             src="/ufo-team.png"
             alt="UFO Team"
             width={2778}
