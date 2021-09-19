@@ -1,5 +1,5 @@
 .main {
-  padding: 105px 100px;
+  padding: 105px 0;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 30px;
@@ -39,36 +39,35 @@
 
 @media screen and (max-width: 1100px) {
   .main {
-    padding: 50px;
+    
     grid-gap: 0;
     gap: 0;
   }
-
-
-
-}
-
-
-@media screen and (max-width: 768px) {
-  .main {
-    padding: 50px;
-    grid-gap: 0;
-    gap: 0;
+  .main__description {
+    width: 150%;
+    font-size: 18px;
+    line-height: 1.7;
   }
   .main__title {
     font-size: 45px;
     max-width: 16ch;
   }
 
+}
+
+
+@media screen and (max-width: 768px) {
+  .main {
+    grid-gap: 0;
+    gap: 0;
+  }
+
+
   .main__image {
     margin: 0;
   }
 
-  .main__description {
-    width: 150%;
-    font-size: 18px;
-    line-height: 1.7;
-  }
+
 }
 
 @media screen and (max-width: 550px) {
@@ -76,7 +75,7 @@
     margin: 10px;
   }
   .main__content {
-    margin: 40px 20px;
+    margin: 0px;
   }
   .main__image {
     margin: 85px 0 0;

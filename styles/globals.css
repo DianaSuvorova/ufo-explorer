@@ -14,3 +14,27 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+.section {
+  padding: 0 100px;
+  }
+  
+  
+  @media screen and (max-width: 1000px) {
+      .section {
+          padding: 0 50px;
+      }
+  }
+  
+  @media screen and (max-width: 768px) {
+      .section {
+          padding: 0 18px;
+      }
+  }
+  
+  @media screen and (max-width: 550px) {
+      .section {
+          padding: 0 8px;
+      }
+  }
