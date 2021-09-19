@@ -4,7 +4,6 @@ import SearchForm from "../searchform/searchform";
 
 export default function Main() {
   return (
-    <div className="section">
     <main className={styles.main}>
       <div className={styles.main__content}>
         <div className={styles.main__title}>
@@ -24,6 +23,5 @@ export default function Main() {
         />
       </div>
     </main>
-    </div>
   );
 }

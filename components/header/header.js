@@ -4,7 +4,6 @@ import styles from "./header.module.css";
 
 export default function Header() {
   return (
-    <div className="section">
     <header className={styles.header}>
       <Link href="/" passHref>
         <a href="replace">
@@ -31,6 +30,5 @@ export default function Header() {
         </li>
       </ul>
     </header>
-    </div>
   );
 }
