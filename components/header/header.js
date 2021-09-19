@@ -1,6 +1,6 @@
-import Link from "next/link";
-import Image from "next/image";
-import styles from "./header.module.css";
+import Link from 'next/link';
+import Image from 'next/image';
+import styles from './header.module.css';
 
 export default function Header() {
   return (
@@ -21,9 +21,7 @@ export default function Header() {
           <Link href="/">Main</Link>
         </li>
         <li className={styles.header__link}>
-          <Link href="https://github.com/DianaSuvorova/ufo-explorer">
-            GitHub
-          </Link>
+          <Link href="https://github.com/DianaSuvorova/ufo-explorer">GitHub</Link>
         </li>
         <li className={styles.header__link}>
           <Link href="/about">About Us</Link>

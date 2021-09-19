@@ -1,10 +1,10 @@
 .footer{
     color: #9b9b9c;
-    padding: 5vh 0;
-    position: fixed;
+    padding: 0 100px 30px;
     background-color: #fff;
-    right: 5vw;
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
 }
 .footer__content{
     list-style: none;
@@ -18,18 +18,21 @@
 .footer__item{
     margin: 0 40px 0;
 }
+.foot__copy {
+    align-self: flex-start;
+}
 .footer__item:last-of-type{
     margin: 0;
 }
 /*Do need to figure out point where content has issues of being blocked to change to sticky or static*/
 @media screen and (max-width: 1000px) {
     .footer{
-        position: static;
+        padding: 0 50px;
     }
 }
 @media screen and (max-width: 630px) {
     .footer{
-        padding: 5vh 0;
+        padding: 0 18px;
     }
     .footer__content{
         flex-direction: column-reverse;
