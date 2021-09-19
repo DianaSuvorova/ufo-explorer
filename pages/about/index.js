@@ -13,8 +13,8 @@ export default function About() {
         <div className={styles.about__content}>
           <p>Hi There!</p>
           <p>
-            We are a group of people who believe that technology and its community fuel the
-            development and growth of each other.
+          We are a group of people who believe that technology and its
+            community fuel the development and growth of each other.
           </p>
           <p>
             The community that we are part of is JavaScript, and we are all at very different stages
