@@ -6,7 +6,7 @@ export default function Main() {
   return (
     <main className={styles.main}>
       <div className={styles.main__content}>
-      <div className={styles.main__title}>
+        <div className={styles.main__title}>
           Friendly open source opportunities explorer
         </div>
         <SearchForm />
@@ -15,7 +15,7 @@ export default function Main() {
         </div>
       </div>
       <div className={styles.main__image}>
-      <Image
+        <Image
           src="/planet-illustration.jpg"
           alt="Planet Illustration"
           width={336}
