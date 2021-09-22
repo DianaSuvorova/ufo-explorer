@@ -15,7 +15,9 @@ export default function Footer() {
           <Link href="/">Privacy</Link>
         </li>
         <li className={styles.footer__item}>
-          <Link href="/">Site Map</Link>
+          <Link href="https://github.com/DianaSuvorova/ufo-explorer">
+            Github
+          </Link>
         </li>
         <li className={styles.footer__item}>
           <Link href="/about">What is UFO?</Link>
