@@ -37,5 +37,8 @@
       "eslint --cache --fix",
       "prettier --write"
     ]
+  },
+  "engines": {
+    "npm": "6"
   }
 }
