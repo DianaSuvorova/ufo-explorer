@@ -16,10 +16,7 @@ export default (req, res) => {
       method: "POST",
     }
   )
-    .then((response) => {
-      console.log(response);
-      return response.text();
-    })
+    .then((response) => response.text())
     .then((text) => {
       res.status(200).json(text);
     })
