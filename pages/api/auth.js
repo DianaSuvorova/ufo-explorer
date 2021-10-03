@@ -3,8 +3,8 @@ import fetch from "node-fetch";
 export default (req, res) => {
   const { code } = req.query;
   const queryData = {
-    client_id: "",
-    client_secret: "",
+    client_id: process.env.GITHUB_CLIENT_ID,
+    client_secret: process.env.GITHUB_SECRET,
     code,
   };
 
