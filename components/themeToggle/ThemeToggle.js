@@ -44,4 +44,3 @@ console.log("theme", theme)
 }
 
 export default ThemeToggle
-
