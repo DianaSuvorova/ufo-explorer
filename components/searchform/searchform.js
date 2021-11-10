@@ -3,11 +3,6 @@ import styles from "./searchform.module.css";
 
 export default function SearchForm() {
 const [file, setFile] = useState(null)
-  
-function submitHandler(e){
-  e.preventDefault();
-  // TODO send to backend
-}
 
   function fileHandler(e) {
     e.preventDefault();
