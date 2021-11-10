@@ -38,7 +38,6 @@ console.log("theme", theme)
                 )}
             </svg>
         </button>
-        {children}
         </>
     )
 }
