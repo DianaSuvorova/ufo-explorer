@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 
-const ThemeToggle = ({children}) => {
+const ThemeToggle = () => {
     const [mounted, setMounted] = useState(false)
     const { theme, setTheme, resolvedTheme } = useTheme()
 
