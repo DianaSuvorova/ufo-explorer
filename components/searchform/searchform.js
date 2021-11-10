@@ -17,7 +17,6 @@ function submitHandler(e){
 
   return (
     <div className={styles.search}>
-      <form onSubmit={submitHandler}>
         <input
           type="file"
           accept=".json"
@@ -27,7 +26,6 @@ function submitHandler(e){
           value={file}
         />
         <button type="submit">submit</button>
-      </form>
     </div>
   );
 }
