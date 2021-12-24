@@ -5,25 +5,25 @@ import SearchForm from "../searchform/searchform";
 export default function Main() {
   return (
     <div className="section">
-    <main className={styles.main}>
-      <div className={styles.main__content}>
-        <div className={styles.main__title}>
-          Friendly open source opportunities explorer
+      <main className={styles.main}>
+        <div className={styles.main__content}>
+          <div className={styles.main__title}>
+            Friendly open source opportunities explorer
+          </div>
+          <SearchForm />
+          <div className={styles.main__description}>
+            Feel the power of the community by giving back.
+          </div>
         </div>
-        <SearchForm />
-        <div className={styles.main__description}>
-          Feel the power of the community by giving back.
+        <div className={styles.main__image}>
+          <Image
+            src="/planet-illustration.jpg"
+            alt="Planet Illustration"
+            width={336}
+            height={237}
+          />
         </div>
-      </div>
-      <div className={styles.main__image}>
-        <Image
-          src="/planet-illustration.jpg"
-          alt="Planet Illustration"
-          width={336}
-          height={237}
-        />
-      </div>
-    </main>
+      </main>
     </div>
   );
 }

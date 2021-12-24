@@ -25,6 +25,10 @@
   outline: none;
 }
 
+.search__input::-webkit-file-upload-button {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .search {
     width: 160%;
