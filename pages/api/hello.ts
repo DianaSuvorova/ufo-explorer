@@ -26,6 +26,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       res.status(200).json(result);
     })
     .catch((error) => {
-      res.status(400).json("Error:", error);
+      console.log('there was an error!');
     });
 };
