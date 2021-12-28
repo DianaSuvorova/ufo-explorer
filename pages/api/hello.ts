@@ -1,7 +1,8 @@
+import type { NextApiRequest, NextApiResponse } from 'next'
 import { fromUrl } from "hosted-git-info";
 import fetch from "node-fetch";
 
-const fetchPackageDetails = async (npmName) => {
+const fetchPackageDetails = async (npmName: string) => {
   const npmUrl = `https://registry.npmjs.org/${npmName}`;
   let pkgDetail;
   await fetch(npmUrl)
@@ -17,7 +18,7 @@ const fetchPackageDetails = async (npmName) => {
   return pkgDetail;
 };
 
-export default async (req, res) => {
+export default async (req: NextApiRequest, res: NextApiResponse) => {
   const dependencies = Object.keys(req.body.dependencies || {});
   const fetchAll = Promise.all(dependencies.map(fetchPackageDetails));
   fetchAll
@@ -25,6 +26,6 @@ export default async (req, res) => {
       res.status(200).json(result);
     })
     .catch((error) => {
-      res.status(400).json("Error:", error);
+      console.log('there was an error!');
     });
 };
