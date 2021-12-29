@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./main.module.css";
-import SearchForm from "../searchform/searchform";
+import SearchForm from "../searchform/searchform.tsx";
 
 export default function Main() {
   return (
