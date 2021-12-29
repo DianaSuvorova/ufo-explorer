@@ -1,18 +1,29 @@
+import { useState } from 'react';
 import fetch from "node-fetch";
 import styles from "./searchform.module.css";
 
-const processData = (packageJson) => {
-  fetch("/api/hello", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: packageJson,
-  });
-};
 
 export default function SearchForm() {
+
+  const [resultList, setResultList] = useState([]);
+
+  const processData = (packageJson) => {
+    fetch("/api/hello", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: packageJson,
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        setResultList(data);
+      });
+  };
+
   return (
+    <>
     <div className={styles.search}>
       <input
         type="file"
@@ -29,5 +40,7 @@ export default function SearchForm() {
         }}
       />
     </div>
+      {resultList.map(result => (<div>{result.name}</div>))}
+    </>
   );
 }
