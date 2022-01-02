@@ -12,6 +12,7 @@
     "test": "npm run lint"
   },
   "dependencies": {
+    "cookies": "^0.8.0",
     "hosted-git-info": "^4.0.2",
     "next": "^11.1.2",
     "node-fetch": "^2.6.1",
