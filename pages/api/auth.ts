@@ -7,7 +7,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   const queryData = {
     client_id: process.env.GITHUB_CLIENT_ID,
     client_secret: process.env.GITHUB_SECRET,
-    code,
+    code: code.toString(),
   };
 
   const searchParams = new URLSearchParams(queryData);
