@@ -2,6 +2,8 @@ import Image from "next/image";
 import styles from "./main.module.css";
 import SearchForm from "../searchform/searchform.tsx";
 
+const gitAuthURL = `https://github.com/login/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID}`;
+
 export default function Main() {
   return (
     <div className="section">
@@ -11,6 +13,7 @@ export default function Main() {
             Friendly open source opportunities explorer
           </div>
           <SearchForm />
+          <a href={gitAuthURL}>We use git auth to get the data</a>
           <div className={styles.main__description}>
             Feel the power of the community by giving back.
           </div>
