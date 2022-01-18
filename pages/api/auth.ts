@@ -5,8 +5,8 @@ import Cookies from 'cookies';
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const { code } = req.query;
   const queryData = {
-    client_id: process.env.GITHUB_CLIENT_ID,
-    client_secret: process.env.GITHUB_SECRET,
+    client_id: process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID,
+    client_secret: process.env.GITHUB_CLIENT_SECRET,
     code: code.toString(),
   };
 
@@ -28,6 +28,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
           httpOnly: true,
           sameSite: 'lax'
       })
-      res.status(200).json({accessToken});
+      res.redirect('/');
     })
 };
