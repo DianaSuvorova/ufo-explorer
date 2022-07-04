@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_OPTIONS='--inspect' next dev",
+    "dev": "NODE_OPTIONS='--inspect' next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .  --ext .js --fix",
@@ -14,12 +14,13 @@
   "dependencies": {
     "cookies": "^0.8.0",
     "hosted-git-info": "^4.0.2",
-    "next": "^11.1.2",
+    "next": "^12.2.0",
     "node-fetch": "^2.6.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@types/node": "^18.0.1",
     "@types/react": "^17.0.38",
     "eslint": "^7.2.0",
     "eslint-config-airbnb": "18.2.1",
@@ -40,6 +41,6 @@
     ]
   },
   "engines": {
-    "npm": "6"
+    "npm": "8"
   }
 }
